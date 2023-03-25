@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+/* Default CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #fff !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+/* Navbar CSS */
+
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    transition: 0.32s ease-in-out;
+    background-color: rgba(254,110,172,255);
+}
+
+nav.navbar.scrolled {
+    padding: 0px 0;
+}
+
+nav.navbar a.navbar-brand {
+    width: 9%;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 20px;
+    font-size: 14px;
+    opacity: 0.75;
+    transition: 0.32s ease-in-out;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover{
+    opacity: 1;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+    font-size: 15px;
+}
+
+span.navbar-text {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-text a, .navbar-text a:focus {
+    color: white;
+}
+
+
+.social-icon {
+    display: inline-block;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.5);
+    color: #fff;
+    opacity: 0.75;
+    transition: 0.32s ease-in-out;
+}
+
+.social-icon a:hover {
+    opacity: 1;
+    transform: scale(1.8);
+    color: #fff
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #fff;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: #fff;
+}
+
+.buttonClass:hover {
+    transform: scale(1.1);
+    transition: 0.32s ease-in-out;
+}
+
+.buttonClass::before {
+    content: "";
+    transform: scale(1);
+    transition: 0.32s ease-in-out;
+}
+
+/* Banner CSS */
+
+.banner {
+    margin-top: 0;
+    padding: 150px 0 100px 0;
+    background-color: #fff;
+}
+
+.banner .tagline {
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    font-size: 30px;
+    margin-bottom: 16px;
+    display: inline-block;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .banner h1 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner p {
+    color: #262525;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
   }
-}
+
