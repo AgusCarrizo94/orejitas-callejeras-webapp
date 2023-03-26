@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import perroBannerBG from '../assets/perrosBannerBG.png';
+import perroBannerBG from '../assets/img/perrosBannerBG.png';
 import Button from 'react-bootstrap/Button';
 
 export const Banner = () => {
@@ -14,7 +14,7 @@ export const Banner = () => {
                         <Button variant="outline" style={{backgroundColor: "black", display: "none"}} onClick={() => console.log("Hello World!")}>Contactanos</Button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={perroBannerBG} alt="imagen banner" style={{height: "85%", width: "85%"}}/>
+                        <img src={perroBannerBG} alt="imagen banner" style={{height: "95%", width: "90%"}}/>
                     </Col>
                 </Row>
             </Container>

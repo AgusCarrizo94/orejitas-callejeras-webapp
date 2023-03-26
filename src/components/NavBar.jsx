@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import orejitasCallejeras from '../assets/orejitasCallejeras.png';
+import orejitasCallejeras from '../assets/img/orejitasCallejeras.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
@@ -54,7 +54,7 @@ export const NavBar = () => {
                 </div>
             </span>
             <div className="buttonClass">
-                <Button variant="outline" href="#contacto" style={{color: "rgba(254,110,172,255)", borderColor: "white", backgroundColor: "white", marginLeft: "20px"}}>Contacto</Button>
+                <Button variant="outline" href="#contacto" style={{color: "rgba(254,110,172,255)", borderColor: "white", backgroundColor: "white", marginLeft: "20px", fontFamily: "Northwoods, sans-serif"}}>Contacto</Button>
             </div>
           </Navbar.Collapse>
         </Container>

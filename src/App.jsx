@@ -1,14 +1,14 @@
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
-import { Rescatados } from './components/Rescatados';
+import { Adopcion } from './components/Adopcion';
 
 function App() {
   return (
     <div className="App">
     <NavBar />
     <Banner />
-    <Rescatados />
+    <Adopcion />
     </div>
   );
 }
